@@ -14,11 +14,16 @@ This is a simple Task Management App built with React and Redux. The app allows 
   ![Screenshot](https://github.com/prince-132/To-Do-List/blob/main/Images/Screenshot%202024-06-29%20122924.png)
   
 - Delete tasks
+
+  ![screenshot](https://github.com/prince-132/To-Do-List/blob/main/Images/Screenshot%202024-06-29%20130653.png)
+  
 - Toggle task completion
 
   ![Screenshot](https://github.com/prince-132/To-Do-List/blob/main/Images/Screenshot%202024-06-29%20122325.png)
   
 - Persist tasks in local storage
+
+  ![ss](https://github.com/prince-132/To-Do-List/blob/main/Images/Screenshot%202024-06-29%20130735.png)
 
 ## Technologies Used
 
@@ -26,6 +31,7 @@ This is a simple Task Management App built with React and Redux. The app allows 
 - Redux Toolkit
 - JavaScript
 - CSS
+- HTML
 
 ## Getting Started
 
