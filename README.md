@@ -25,6 +25,11 @@ This is a simple Task Management App built with React and Redux. The app allows 
 
   ![ss](https://github.com/prince-132/To-Do-List/blob/main/Images/Screenshot%202024-06-29%20130735.png)
 
+## Deployed Link
+```bash
+https://to-do-list-eight-sepia.vercel.app/
+```
+
 ## Technologies Used
 
 - React
