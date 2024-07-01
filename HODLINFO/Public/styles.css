@@ -1,36 +1,119 @@
-/* styles.css */
+/* Basic styling for the body */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-  }
-  
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-  }
-  
-  main {
-    padding: 2rem;
-  }
-  
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 0 auto;
-  }
-  
-  th, td {
-    padding: 1rem;
-    border: 1px solid #ddd;
-    text-align: center;
-  }
-  
-  th {
-    background-color: #333;
-    color: #fff;
-  }
-  
+  background-color: #181818; /* Dark background color for the body */
+  color: #ffffff; /* White text color for better contrast */
+  font-family: 'Arial', sans-serif; /* Font family for the text */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+/* Styling for the header */
+header {
+  background-color: #1e1e1e; /* Darker background for the header */
+  padding: 20px; /* Padding inside the header */
+  text-align: center; /* Center-align the text */
+}
+
+/* Container for the header content */
+.header-content {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Arrange items in a column */
+  align-items: center; /* Center-align items horizontally */
+  max-width: 800px; /* Maximum width for the content */
+  margin: 0 auto; /* Center the content horizontally */
+}
+
+/* Styling for the main title */
+h1 {
+  font-size: 36px; /* Font size for the title */
+  margin: 0; /* Remove default margin */
+  color: #00ffd5; /* Aqua color for the title */
+}
+
+/* Styling for the stats container */
+.stats {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Distribute items evenly */
+  width: 100%; /* Full width of the container */
+  margin: 20px 0; /* Vertical margin */
+}
+
+/* Styling for each stat item */
+.stats > div {
+  font-size: 16px; /* Font size for the stat text */
+  color: #ffffff; /* White text color */
+  text-align: center; /* Center-align the text */
+}
+
+/* Styling for the price container */
+.price {
+  text-align: center; /* Center-align the text */
+  margin-top: 10px; /* Top margin */
+}
+
+/* Styling for the price text */
+.price span {
+  display: block; /* Display as block element */
+  font-size: 14px; /* Font size for the text */
+  color: #ffffff; /* White text color */
+}
+
+/* Styling for the price value */
+.price h2 {
+  font-size: 48px; /* Font size for the price */
+  margin: 5px 0; /* Vertical margin */
+  color: #00ffd5; /* Aqua color for the price */
+}
+
+/* Styling for the main content */
+main {
+  padding: 20px; /* Padding inside the main content */
+  max-width: 1200px; /* Maximum width for the content */
+  margin: 0 auto; /* Center the content horizontally */
+}
+
+/* Styling for the table */
+table {
+  width: 100%; /* Full width of the container */
+  border-collapse: collapse; /* Collapse borders into a single border */
+  margin-top: 20px; /* Top margin */
+}
+
+/* Styling for the table header */
+thead {
+  background-color: #1e1e1e; /* Darker background for the header */
+}
+
+/* Styling for the table header cells */
+thead th {
+  padding: 15px; /* Padding inside the header cells */
+  text-align: left; /* Left-align the text */
+  color: #00ffd5; /* Aqua color for the header text */
+  font-size: 16px; /* Font size for the header text */
+}
+
+/* Styling for the table rows in the body */
+tbody tr {
+  border-bottom: 1px solid #333333; /* Border for the rows */
+}
+
+/* Remove border for the last table row */
+tbody tr:last-child {
+  border-bottom: none; /* No border for the last row */
+}
+
+/* Styling for the table cells in the body */
+tbody td {
+  padding: 15px; /* Padding inside the cells */
+  font-size: 16px; /* Font size for the cell text */
+}
+
+/* Styling for positive difference values */
+tbody td.green {
+  color: #00ff00; /* Green color for positive values */
+}
+
+/* Styling for negative difference values */
+tbody td.red {
+  color: #ff0000; /* Red color for negative values */
+}

@@ -1,32 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Character encoding for the document -->
   <meta charset="UTF-8">
+  <!-- Setting the viewport to make the website responsive -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title of the webpage -->
   <title>HodlInfo</title>
+  <!-- Link to the external CSS stylesheet -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Header section of the webpage -->
   <header>
-    <h1>HodlInfo</h1>
+    <div class="header-content">
+      <!-- Main title of the webpage -->
+      <h1>HODLINFO</h1>
+      <!-- Container for statistical information -->
+      <div class="stats">
+        <div>0.73 %<br>5 Mins</div>
+        <div>1.18 %<br>1 Hour</div>
+        <div>9.21 %<br>1 Day</div>
+        <div>10.49 %<br>7 Days</div>
+      </div>
+      <!-- Container for displaying the best price to trade -->
+      <div class="price">
+        <span>Best Price to Trade</span>
+        <h2>₹ 53,40,792</h2>
+        <span>Average BTC/INR net price including commission</span>
+      </div>
+    </div>
   </header>
+  <!-- Main content section -->
   <main>
+    <!-- Table for displaying cryptocurrency data -->
     <table>
       <thead>
+        <!-- Table headers -->
         <tr>
-          <th>Name</th>
-          <th>Last</th>
-          <th>Buy</th>
-          <th>Sell</th>
-          <th>Volume</th>
-          <th>Base Unit</th>
+          <th>#</th>
+          <th>Platform</th>
+          <th>Last Traded Price</th>
+          <th>Buy / Sell Price</th>
+          <th>Difference</th>
+          <th>Savings</th>
         </tr>
       </thead>
       <tbody id="cryptoData">
-        <!-- Data will be populated here -->
+        <!-- Data will be populated here by the JavaScript code -->
       </tbody>
     </table>
   </main>
+  <!-- Link to the external JavaScript file -->
   <script src="app.js"></script>
 </body>
 </html>
