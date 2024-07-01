@@ -2,13 +2,33 @@
 
 This is a simple Task Management App built with React and Redux. The app allows users to add, edit, delete, and toggle the completion status of tasks. It demonstrates the use of React components, hooks, and state management with Redux.
 
+![Screenshot](https://github.com/prince-132/To-Do-List/blob/main/Images/Screenshot%202024-06-29%20122946.png)
 ## Features
 
 - Add new tasks
+
+  ![screenshot](https://github.com/prince-132/To-Do-List/blob/main/Images/Screenshot%202024-06-29%20125900.png)
+  
 - Edit existing tasks
+  
+  ![Screenshot](https://github.com/prince-132/To-Do-List/blob/main/Images/Screenshot%202024-06-29%20122924.png)
+  
 - Delete tasks
+
+  ![screenshot](https://github.com/prince-132/To-Do-List/blob/main/Images/Screenshot%202024-06-29%20130653.png)
+  
 - Toggle task completion
+
+  ![Screenshot](https://github.com/prince-132/To-Do-List/blob/main/Images/Screenshot%202024-06-29%20122325.png)
+  
 - Persist tasks in local storage
+
+  ![ss](https://github.com/prince-132/To-Do-List/blob/main/Images/Screenshot%202024-06-29%20130735.png)
+
+## Deployed Link
+```bash
+https://to-do-list-eight-sepia.vercel.app/
+```
 
 ## Technologies Used
 
@@ -16,6 +36,7 @@ This is a simple Task Management App built with React and Redux. The app allows 
 - Redux Toolkit
 - JavaScript
 - CSS
+- HTML
 
 ## Getting Started
 
