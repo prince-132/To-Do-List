@@ -4,13 +4,35 @@
 
 This is a simple Task Management App built with React and Redux. The app allows users to add, edit, delete, and toggle the completion status of tasks. It demonstrates the use of React components, hooks, and state management with Redux.
 
+![](https://github.com/prince-132/To-Do-List/blob/main/ReactJs/Images/Screenshot%202024-06-29%20122946.png)
+
 ## Features
 
 - Add new tasks
+  
+  ![](https://github.com/prince-132/To-Do-List/blob/main/ReactJs/Images/Screenshot%202024-06-29%20125900.png)
+  
 - Edit existing tasks
+ 
+  ![](https://github.com/prince-132/To-Do-List/blob/main/ReactJs/Images/Screenshot%202024-06-29%20122924.png)
+  
 - Delete tasks
+  
+  ![](https://github.com/prince-132/To-Do-List/blob/main/ReactJs/Images/Screenshot%202024-06-29%20130653.png)
+  
 - Toggle task completion
+  
+  ![](https://github.com/prince-132/To-Do-List/blob/main/ReactJs/Images/Screenshot%202024-06-29%20122325.png)
+  
 - Persist tasks in local storage
+  
+  ![](https://github.com/prince-132/To-Do-List/blob/main/ReactJs/Images/Screenshot%202024-06-29%20130735.png)
+
+
+## Deployed Link
+```bash
+https://to-do-list-eight-sepia.vercel.app/
+```
 
 ## Technologies Used
 
@@ -235,6 +257,42 @@ export const { setTasks, addTask, deleteTask, editTask, toggleComplete } = tasks
 export default tasksSlice.reducer;
 ```
 
+## React Hooks Used
+### useState
+- Definition: useState is a Hook that lets you add React state to function components.
+- Usage: Used in TaskInput component to manage the state of the input field.
+```bash
+const [task, setTask] = useState('');
+```
+
+### useEffect
+- Definition: useEffect is a Hook that lets you perform side effects in function components. It runs after the first render and after every update.
+- Usage: Used in TaskList component to load tasks from localStorage when the component mounts and to save tasks to localStorage whenever the tasks state changes.
+```bash
+useEffect(() => {
+  const savedTasks = JSON.parse(localStorage.getItem('tasks'));
+  if (savedTasks) {
+    dispatch(setTasks(savedTasks));
+  }
+}, [dispatch]);
+useEffect(() => {
+  localStorage.setItem('tasks', JSON.stringify(tasks));
+}, [tasks]);
+```
+
+### useSelector
+- Definition: useSelector is a Hook that allows you to extract data from the Redux store state, using a selector function.
+- Usage: Used in TaskList component to access the tasks state from the Redux store.
+```bash
+const tasks = useSelector((state) => state.tasks);
+```
+
+### useDispatch
+- Definition: useDispatch is a Hook that returns a reference to the dispatch function from the Redux store. You may use it to dispatch actions as needed.
+- Usage: Used in TaskInput and TaskList components to dispatch actions to the Redux store.
+```bash
+const dispatch = useDispatch();
+```
 
 
 # 2-> Node.js Application
@@ -242,6 +300,8 @@ export default tasksSlice.reducer;
 # HODLINFO
 
 HODLINFO is a cryptocurrency information dashboard that fetches and displays data from the WazirX API. It shows real-time information about the top 10 cryptocurrencies including their last traded price, buy and sell prices, percentage differences, and potential savings.
+
+![](https://github.com/prince-132/To-Do-List/blob/main/HODLINFO/Images/quad.jpg)
 
 ## Features
 
